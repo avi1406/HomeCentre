@@ -1,0 +1,191 @@
+﻿1,667,1,Kitchen Gadgets   Utensils
+2,667,2,Cookware and Bakeware
+3,667,3,Modular Kitchens
+4,668,1,Ironing Boards
+5,668,2,Hangers
+6,668,3,Laundry
+7,668,4,Cleaning Accessories
+8,669,1,Other Household
+9,670,1,Comforters
+10,670,2,Bed sheets
+11,670,3,Pillow
+12,670,4,Cushions
+13,670,5,Curtains
+14,670,6,Others
+15,670,7,Fabrics
+16,671,1,Crockery
+17,671,2,Melamine
+18,671,3,Cutlery
+19,671,4,Glassware
+20,671,5,Table linen
+21,672,1,Video   Audio   Magazine Storage
+22,652,1,Bed
+23,652,2,Wardrobe
+24,652,3,Other Adult
+25,652,4,Adult Mattresses
+26,652,5,Diwan Bed   Head Board
+27,653,1,Dining Set
+28,653,2,Dining Table
+29,653,3,Buffet And Hutch
+30,653,4,Dining Chair
+31,653,5,Dining Stool
+32,653,6,Other Dining
+33,654,1,Outdoor Dinning
+34,654,2,Lounge Sets
+35,654,3,Chaise   Swing
+36,654,4,Other Garden
+37,655,1,Study Desk
+38,655,2,Book Cases
+39,655,3,Study Chair
+40,655,4,Other HOSO
+41,656,1,Bunk Bed
+42,656,2,Kids Bed
+43,656,3,Kids Wardrobe
+44,656,4,Other Kids
+45,656,5,Kids Mattresses
+46,657,1,Living Case Goods
+47,657,2,Upholstery Fabric
+48,657,3,Upholstery Leather
+49,657,4,Upholstery Others
+50,657,5,Coffee Tables
+51,657,6,Wicker
+52,657,7,Other Living
+53,657,8,Upholstery Corner
+54,657,9,Recliners
+55,658,1,Mattress
+56,658,2,Diwan Bed   Head Board
+57,659,3,Modular Kitchens
+58,660,1,Other Furniture
+59,661,1,Young Bed
+60,661,2,Young Wardrobe
+61,661,3,Other Young
+62,661,4,Young Mattresses
+63,662,1,Bathroom Accessories
+64,662,2,Towel
+65,663,1,Flowers
+66,663,2,Garden Pots
+67,663,3,Wicker
+68,663,4,Fountains
+69,663,5,Garden Others
+70,664,1,Candles
+71,664,2,Pot Pourri
+72,664,3,Gift Major
+73,665,1,HC - Non Trading
+74,666,1,Lighting
+75,666,2,Floor Covering
+76,666,3,Gallery
+77,666,4,Wall Covering
+78,720,10,Promotion
+79,721,8,Promotion
+,731,1001,PLASTIC
+,659,1,Modular Kitchen Invoicing
+,659,2,Modular Kitchen Cabinets
+,659,4,Utilities and Accessories
+,659,5,Basic Hardware
+,659,6,Modular Kitchen Add-on s
+,951,1001,Cash And Carry others
+,951,1002,Cleaning Solution
+,951,1003,Shelves
+,951,1004,Sitting Solution
+,951,1005,Storage
+,951,1006,Utility
+,657,10,Cash And Carry
+,652,6,Young Bed
+,659,7,Other Modular Kitchen
+,652,7,Single Bed
+,902,1,Non Trading
+,1340,1001,HC-Furniture Delivery Charges
+,1341,1001,HC-House Hold Delivery Charges
+,668,5,Open Laundry
+,652,11,Bedroom
+,655,5,HOSO
+,652,8,Shoe Rack
+,652,9,Bedroom Case Goods
+,652,10,Other Bedroom
+,653,7,Dining Bench
+,653,8,Bar
+,654,5,Garden Table
+,654,6,Garden Chair
+,654,7,Garden Bench
+,657,11,Entertainment Unit
+,657,12,Sofa
+,657,13,Table
+,653,9,Dining
+,654,8,Garden
+,1569,1001,Sitting Solution
+,1569,1002,Shelves
+,1569,1003,Cleaning Solution
+,1569,1004,Utility
+,1569,1005,Cash And Carry others
+,1569,1006,Storage
+,1568,1,Health And Personal Care
+,1568,2,Portable Accessaries
+,1568,3,Home Solutions
+,1568,4,Others
+,1555,1001,HC-Furniture Delivery Charges
+,1554,1001,Bedroom - Adult Mattresses
+,1554,1002,Bedroom - Bed
+,1554,1003,Bedroom - Bedroom
+,1554,1004,Bedroom - Bedroom Case Goods
+,1554,1005,Bedroom - Diwan Bed   Head Board
+,1554,1006,Bedroom - Other Adult
+,1554,1007,Bedroom - Other Bedroom
+,1554,1008,Bedroom - Shoe Rack
+,1554,1009,Bedroom - Single Bed
+,1554,1010,Bedroom - Wardrobe
+,1554,1011,Bedroom - Young Bed
+,1554,1012,Cash And Carry - Cash And Carry others
+,1554,1013,Cash And Carry - Cleaning Solution
+,1554,1014,Cash And Carry - Shelves
+,1554,1015,Cash And Carry - Sitting Solution
+,1554,1016,Cash And Carry - Storage
+,1554,1017,Cash And Carry - Utility
+,1554,1018,Dining - Bar
+,1554,1019,Dining - Buffet And Hutch
+,1554,1020,Dining - Dining
+,1554,1021,Dining - Dining Bench
+,1554,1022,Dining - Dining Chair
+,1554,1023,Dining - Dining Set
+,1554,1024,Dining - Dining Stool
+,1554,1025,Dining - Dining Table
+,1554,1026,Dining - Other Dining
+,1554,1027,Garden - Chaise   Swing
+,1554,1028,Garden - Garden Bench
+,1554,1029,Garden - Garden Chair
+,1554,1030,Garden - Garden Table
+,1554,1031,Garden - Lounge Sets
+,1554,1032,Garden - Other Garden
+,1554,1033,Garden - Outdoor Dinning
+,1554,1034,HC-Furniture_Promotion - Promotion
+,1554,1035,HC-Furniture-Kids Bedroom - Bunk Bed
+,1554,1036,HC-Furniture-Kids Bedroom - Kids Bed
+,1554,1037,HC-Furniture-Kids Bedroom - Kids Mattresses
+,1554,1038,HC-Furniture-Kids Bedroom - Kids Wardrobe
+,1554,1039,HC-Furniture-Kids Bedroom - Other Kids
+,1554,1040,HC-Furniture-Non Trading - Non Trading
+,1554,1041,HC-Furniture-Young Bedroom - Other Young
+,1554,1042,HC-Furniture-Young Bedroom - Young Bed
+,1554,1043,HC-Furniture-Young Bedroom - Young Mattresses
+,1554,1044,HC-Furniture-Young Bedroom - Young Wardrobe
+,1554,1045,HC-House Hold_Promotion - Promotion
+,1554,1046,HOSO - Book Cases
+,1554,1047,HOSO - HOSO
+,1554,1048,HOSO - Other HOSO
+,1554,1049,HOSO - Study Chair
+,1554,1050,HOSO - Study Desk
+,1554,1051,Living - Cash And Carry
+,1554,1052,Living - Coffee Tables
+,1554,1053,Living - Entertainment Unit
+,1554,1054,Living - Living Case Goods
+,1554,1055,Living - Other Living
+,1554,1056,Living - Recliners
+,1554,1057,Living - Sofa
+,1554,1058,Living - Table
+,1554,1059,Living - Upholstery Corner
+,1554,1060,Living - Upholstery Fabric
+,1554,1061,Living - Upholstery Leather
+,1554,1062,Living - Upholstery Others
+,1554,1063,Living - Wicker
+,1554,1064,Mattress - Diwan Bed   Head Board
+,1554,1065,Mattress - Mattress
+,1554,1066,Other Furniture - Other Furniture

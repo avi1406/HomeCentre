@@ -1,0 +1,98 @@
+﻿1,uid,Unique ID,0,,,FALSE,4
+2,uid,Unique ID,0,,,FALSE,61
+3,brand,Brand,0,,,FALSE,4
+4,brand,Brand,0,,,FALSE,61
+5,brand_code,brand_code,10,,,FALSE,4
+6,brand_code,brand_code,10,,,TRUE,61
+7,brand_type__brand_private_lable,Brand Type (Brand/Private Lable),0,,,FALSE,4
+8,brand_type__brand_private_lable,Brand Type (Brand/Private Lable),0,,,FALSE,61
+9,class,Class,0,,,FALSE,4
+10,class,Class,0,,,FALSE,61
+11,class_code,Class code,10,,,FALSE,4
+12,class_code,Class code,10,,,FALSE,61
+13,country_of_origin,Country of Origin,0,,,FALSE,4
+14,country_of_origin,Country of Origin,0,,,FALSE,61
+15,currency__inr_usd_eur,CURRENCY (INR/USD/EUR),0,,,FALSE,4
+16,currency__inr_usd_eur,CURRENCY (INR/USD/EUR),0,,,FALSE,61
+17,dept,Dept,0,,,TRUE,4
+18,dept,Dept,0,,,TRUE,61
+19,dept_code,Dept code,10,,,FALSE,4
+20,dept_code,Dept code,10,,,FALSE,61
+21,div,Div,0,,,FALSE,4
+22,div,Div,0,,,FALSE,61
+23,div_code,Div code,10,,,FALSE,4
+24,div_code,div_code,10,,,TRUE,61
+25,ean_code,Ean Code,10,,,FALSE,4
+26,ean_code,Ean Code,10,,,FALSE,61
+27,exw___f_o_b___cif_cost,Exw / F.O.B / CIF cost,10,,,FALSE,4
+28,exw___f_o_b___cif_cost,Exw / F.O.B / CIF cost,10,,,FALSE,61
+29,gst,GST%,10,,,FALSE,4
+30,gst,GST%,10,,,FALSE,61
+31,hsn_code,HSN CODE,10,,,FALSE,4
+32,hsn_code,HSN CODE,10,,,FALSE,61
+33,inner_carton_qty,Inner Carton Qty,10,,,FALSE,4
+34,inner_carton_qty,Inner Carton Qty,10,,,FALSE,61
+35,item_code,Item Code,10,,,FALSE,4
+36,item_code,Item Code,10,,,FALSE,61
+37,item_desc,Item Desc,0,,,FALSE,4
+38,item_desc,Item Desc,0,,,FALSE,61
+39,launch_date,Launch Date,20,,,FALSE,4
+40,launch_date,Launch Date,20,,,FALSE,61
+41,lead_time__days,Lead Time (days),10,,,FALSE,4
+42,lead_time__days,Lead Time (days),10,,,FALSE,61
+43,master_carton_qty,Master Carton Qty,10,,,FALSE,4
+44,master_carton_qty,Master Carton Qty,10,,,FALSE,61
+45,moq,MOQ,10,,,FALSE,4
+46,moq,MOQ,10,,,FALSE,61
+47,moq_remark_1,MOQ remark 1,10,,,FALSE,4
+48,moq_remark_1,MOQ remark 1,0,,,FALSE,61
+49,moq_remark_2,MOQ remark 2,10,,,FALSE,4
+50,moq_remark_2,MOQ remark 2,10,,,FALSE,61
+51,mrp,MRP,10,,,FALSE,4
+52,mrp,MRP,10,,,FALSE,61
+53,planogram_name,Planogram Name,0,,,FALSE,4
+54,planogram_name,Planogram Name,0,,,FALSE,61
+55,plc,PLC,0,,,FALSE,4
+56,plc,PLC,0,,,FALSE,61
+57,price_grouping,Price Grouping,0,,,FALSE,4
+58,price_grouping,Price Grouping,0,,,FALSE,61
+59,primary_sec_sku,Primary/Sec SKU,0,,,FALSE,4
+60,primary_sec_sku,Primary/Sec SKU,0,,,FALSE,61
+61,product_classification,Product Classification,0,,,FALSE,4
+62,product_classification,Product Classification,0,,,FALSE,61
+63,product_color,Product Color,0,,,FALSE,4
+64,product_color,Product Color,0,,,FALSE,61
+65,product_grouping,Product Grouping,0,,,FALSE,4
+66,product_grouping,Product Grouping,0,,,FALSE,61
+67,product_purpose,Product Purpose,0,,,FALSE,4
+68,product_purpose,Product Purpose,0,,,FALSE,61
+69,product_vendor_code,Product Vendor Code,0,,,FALSE,4
+70,product_vendor_code,Product Vendor Code,0,,,FALSE,61
+71,purchase_type,Purchase Type,0,,,TRUE,4
+72,purchase_type,Purchase Type,0,,,FALSE,61
+73,ref_sku_1,Ref SKU 1,10,,,FALSE,4
+74,ref_sku_1,Ref SKU 1,10,,,FALSE,61
+75,ref_sku_2,Ref SKU 2,10,,,FALSE,4
+76,ref_sku_2,Ref SKU 2,10,,,FALSE,61
+77,ref_sku_remarks,Ref SKU Remarks,0,,,FALSE,4
+78,ref_sku_remarks,Ref SKU Remarks,0,,,FALSE,61
+79,rms_supplier_code,RMS Supplier code,10,,,FALSE,4
+80,rms_supplier_code,RMS Supplier code,10,,,FALSE,61
+81,season,SEASON,0,,,TRUE,4
+82,season,SEASON,0,,,TRUE,61
+83,set___pcs,SET / PCS,10,,,FALSE,4
+84,set___pcs,SET / PCS,0,,,FALSE,61
+85,specific_product_name,Specific Product Name,0,,,FALSE,4
+86,specific_product_name,Specific Product Name,0,,,FALSE,61
+87,style_name,Style Name,0,,,FALSE,4
+88,style_name,Style Name,0,,,FALSE,61
+89,sub_class,Sub Class,0,,,FALSE,4
+90,sub_class,Sub Class,0,,,FALSE,61
+91,sub_class_code,Sub Class code,10,,,FALSE,4
+92,sub_class_code,Sub Class code,10,,,FALSE,61
+93,supplier_name,Supplier Name,0,,,FALSE,4
+94,supplier_name,Supplier Name,0,,,FALSE,61
+95,unique_id_status__y_n,Unique ID Status (Y/N),0,,,FALSE,4
+96,unique_id_status__y_n,Unique ID Status (Y/N),0,,,FALSE,61
+97,product_desc,Product Desc,10,,,FALSE,4
+98,product_desc,Product Desc,10,,,FALSE,61

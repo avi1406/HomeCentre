@@ -1,0 +1,60 @@
+@model HomeCentre.PIM.BAL.Model.Email.ItemCodeEmailContent
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Email</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 3px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Greeting Section -->
+    <p>Dear User,</p>
+
+    <!-- Introductory Message -->
+    <p>Please find the UID status ready for the itemcodes created for today</p>
+
+    <!-- Email Content Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>SI.No</th>
+                <th>Uid</th>
+                <th>Division</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (var i = 0; i < Model.ItemContent.Count; i++)
+            {
+                var item = Model.ItemContent[i];
+                <tr>
+                    <td>@(i + 1)</td>
+                    <td>@item.Uid</td> <!-- Use Uid with a lowercase 'u' -->
+                    <td>@item.Division</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <!-- Displaying Total Itemcode Count -->
+    <p>Total UID ready for itemcode creation till date: @Model.TotalItemcodeCount</p>
+
+    <!-- Auto-generated Email Notice -->
+    <p>***This is an Auto-Generated email. Do not Reply***</p>
+
+    <p>Thank You</p>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+bin
+obj
+node_modules
+.idea
+.vs
+launchSettings.json
+*.bak
+*.user
+/HomeCentrePIM/api/HomeCentre.PIM/HomeCentre.PIM.Api/Properties

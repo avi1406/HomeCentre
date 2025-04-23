@@ -1,0 +1,61 @@
+@model HomeCentre.PIM.BAL.Model.Email.DigestEmailContent
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Email</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 2px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Greeting Section -->
+    <p>Dear User,</p>
+
+    <!-- Introductory Message -->
+    <p>The following Planogram/Family has been created and is pending for your approval:</p>
+
+    <!-- Email Content Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>SI.No</th>
+                <th>PlanoOrFamilyName</th>
+                <th>Division</th>
+                <th>CreatedDate</th>
+                <th>CreatedBy</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (var i = 0; i < Model.EmailContent.Count; i++)
+            {
+                var item = Model.EmailContent[i];
+                <tr>
+                    <td>@(i + 1)</td>
+                    <td>@item.PlanoOrFamilyName</td>
+                    <td>@item.Division</td>
+                    <td>@item.CreatedDate</td>
+                    <td>@item.UserName</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <!-- Auto-generated Email Notice -->
+    <p>***This is an Auto-Generated email. Do not Reply***</p>
+
+    <p>Thank You</p>
+
+</body>
+</html>

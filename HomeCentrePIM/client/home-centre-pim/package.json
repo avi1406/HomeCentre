@@ -1,0 +1,82 @@
+{
+  "private": true,
+  "scripts": {
+    "start:dev": "cross-env UMI_ENV=dev umi dev",
+    "start:qa": "cross-env UMI_ENV=qa umi dev",
+    "start:staging": "cross-env UMI_ENV=qa umi staging",
+    "start": "cross-env NODE_OPTIONS='--openssl-legacy-provider' umi dev",
+    "build": "cross-env NODE_OPTIONS='--openssl-legacy-provider' umi build",
+    "build:dev": "cross-env UMI_ENV=dev umi build",
+    "build:qa": "cross-env UMI_ENV=qa umi build",
+    "build:staging": "cross-env UMI_ENV=staging umi build",
+    "test": "umi test",
+    "lint": "eslint {src,mock,tests}/**/*.{ts,tsx} --fix",
+    "precommit": "lint-staged"
+  },
+  "dependencies": {
+    "@azure/storage-blob": "^12.12.0",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@fluentui/react": "^8.103.2",
+    "@fluentui/react-charting": "^5.23.12",
+    "@fluentui/react-components": "^9.7.1",
+    "@material-ui/core": "^4.12.4",
+    "@mui/material": "^5.10.15",
+    "@progress/kendo-licensing": "^1.2.2",
+    "@progress/kendo-react-excel-export": "^5.9.0",
+    "@uifabric/experiments": "^7.45.16",
+    "dateformat": "^5.0.3",
+    "i18next": "^22.0.6",
+    "i18next-http-backend": "^2.0.1",
+    "jwt-decode": "^3.1.2",
+    "office-ui-fabric-react": "^7.201.0",
+    "office-ui-fabric-react-pagination": "0.0.8",
+    "react-adal": "^0.5.2",
+    "react-data-table-component": "^7.5.3",
+    "react-form-input-validation": "^2.1.0",
+    "react-i18next": "^12.0.0",
+    "react-icons": "^4.7.1",
+    "react-notify-toast": "^0.5.1",
+    "react-phone-input-2": "^2.15.1",
+    "react-select": "^5.7.0"
+  },
+  "devDependencies": {
+    "@types/dateformat": "^5.0.0",
+    "@types/jest": "^23.3.12",
+    "@types/react": "^16.7.18",
+    "@types/react-adal": "^0.5.2",
+    "@types/react-dom": "^16.0.11",
+    "@types/react-notify-toast": "^0.5.3",
+    "@types/react-numeric-input": "^2.2.4",
+    "@types/react-test-renderer": "^16.0.3",
+    "babel-eslint": "^9.0.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^5.4.0",
+    "eslint-config-umi": "^1.4.0",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^7.0.4",
+    "lint-staged": "^7.3.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "prettier": "^2.5.1",
+    "react-test-renderer": "^16.7.0",
+    "umi": "^2.9.0",
+    "umi-plugin-react": "^1.8.0",
+    "umi-types": "^0.3.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}
