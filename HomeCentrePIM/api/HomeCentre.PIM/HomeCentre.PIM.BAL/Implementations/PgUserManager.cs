@@ -1182,7 +1182,7 @@ namespace HomeCentre.PIM.BAL.Implementations
                 {
                     { "61", "HC-House Hold" },
                     { "4", "HC-Furniture" },
-                    { "65", "HC-Cash And Carry" }
+                    { "65", "Homecentre Daily" }
                 };
 
                 foreach (var item in result)
@@ -1378,7 +1378,7 @@ namespace HomeCentre.PIM.BAL.Implementations
                 {
                     { "61", "HC-House Hold" },
                     { "4", "HC-Furniture" },
-                    { "65", "HC-Cash And Carry" }
+                    { "65", "Homecentre Daily" }
                 };
 
                 foreach (var item in resultData)
@@ -2354,7 +2354,7 @@ namespace HomeCentre.PIM.BAL.Implementations
 
             foreach (var user in users)
             {
-                if (user.Department.Contains("HC-Furniture") && user.Department.Contains("HC-House Hold") && user.Department.Contains("HC-Cash And Carry"))
+                if (user.Department.Contains("HC-Furniture") && user.Department.Contains("HC-House Hold") && user.Department.Contains("Homecentre Daily"))
                 {
                     hcFURCCDepartmentEmails.Add(user.Email);
                 }
@@ -2362,11 +2362,11 @@ namespace HomeCentre.PIM.BAL.Implementations
                 {
                     hcFURDepartmentEmails.Add(user.Email);
                 }
-                else if (user.Department.Contains("HC-Furniture") && user.Department.Contains("HC-Cash And Carry"))
+                else if (user.Department.Contains("HC-Furniture") && user.Department.Contains("Homecentre Daily"))
                 {
                     ccFURDepartmentEmails.Add(user.Email);
                 }
-                else if (user.Department.Contains("HC-Cash And Carry") && user.Department.Contains("HC-House Hold"))
+                else if (user.Department.Contains("Homecentre Daily") && user.Department.Contains("HC-House Hold"))
                 {
                     hcCCDepartmentEmails.Add(user.Email);
                 }
@@ -2378,7 +2378,7 @@ namespace HomeCentre.PIM.BAL.Implementations
                 {
                     furnitureEmails.Add(user.Email);
                 }
-                else if (user.Department.Contains("HC-Cash And Carry"))
+                else if (user.Department.Contains("Homecentre Daily"))
                 {
                     cashandcarryEmails.Add(user.Email);
                 }
@@ -2540,7 +2540,7 @@ namespace HomeCentre.PIM.BAL.Implementations
 
             foreach (var user in users)
             {
-                if (user.Department.Contains("HC-Furniture") && user.Department.Contains("HC-House Hold") && user.Department.Contains("HC-Cash And Carry"))
+                if (user.Department.Contains("HC-Furniture") && user.Department.Contains("HC-House Hold") && user.Department.Contains("Homecentre Daily"))
                 {
                     hcFURCCDepartmentEmails.Add(user.Email);
                 }
@@ -2548,11 +2548,11 @@ namespace HomeCentre.PIM.BAL.Implementations
                 {
                     hcFURDepartmentEmails.Add(user.Email);
                 }
-                else if (user.Department.Contains("HC-Furniture") && user.Department.Contains("HC-Cash And Carry"))
+                else if (user.Department.Contains("HC-Furniture") && user.Department.Contains("Homecentre Daily"))
                 {
                     ccFURDepartmentEmails.Add(user.Email);
                 }
-                else if (user.Department.Contains("HC-Cash And Carry") && user.Department.Contains("HC-House Hold"))
+                else if (user.Department.Contains("Homecentre Daily") && user.Department.Contains("HC-House Hold"))
                 {
                     hcCCDepartmentEmails.Add(user.Email);
                 }
@@ -2564,7 +2564,7 @@ namespace HomeCentre.PIM.BAL.Implementations
                 {
                     furnitureEmails.Add(user.Email);
                 }
-                else if (user.Department.Contains("HC-Cash And Carry"))
+                else if (user.Department.Contains("Homecentre Daily"))
                 {
                     cashandcarryEmails.Add(user.Email);
                 }
@@ -2646,19 +2646,19 @@ namespace HomeCentre.PIM.BAL.Implementations
             var emailContentListFUR = await connection.QueryAsync<ItemCodecontent>("select uid as Uid,division_name as Division from vw_columndata where status = '1' AND  division_name = 'HC-Furniture' AND CAST(datecreated AS DATE) = CURRENT_DATE");
             var emailFurList = emailContentListFUR.ToList();
 
-            var emailContentListCC = await connection.QueryAsync<ItemCodecontent>("select uid as Uid,division_name as Division from vw_columndata where status = '1' AND  division_name = 'HC-Cash And Carry' AND CAST(datecreated AS DATE) = CURRENT_DATE");
+            var emailContentListCC = await connection.QueryAsync<ItemCodecontent>("select uid as Uid,division_name as Division from vw_columndata where status = '1' AND  division_name = 'Homecentre Daily' AND CAST(datecreated AS DATE) = CURRENT_DATE");
             var emailCCList = emailContentListCC.ToList();
 
             var emailContentListHCFUR = await connection.QueryAsync<ItemCodecontent>("select uid as Uid,division_name as Division from vw_columndata where status = '1' AND  division_name in ('HC-House Hold','HC-Furniture') AND CAST(datecreated AS DATE) = CURRENT_DATE");
             var emailHCFURList = emailContentListHCFUR.ToList();
 
-            var emailContentListHCCC = await connection.QueryAsync<ItemCodecontent>("select uid as Uid,division_name as Division from vw_columndata where status = '1' AND  division_name in ('HC-House Hold','HC-Cash And Carry') AND CAST(datecreated AS DATE) = CURRENT_DATE");
+            var emailContentListHCCC = await connection.QueryAsync<ItemCodecontent>("select uid as Uid,division_name as Division from vw_columndata where status = '1' AND  division_name in ('HC-House Hold','Homecentre Daily') AND CAST(datecreated AS DATE) = CURRENT_DATE");
             var emailHCCCList = emailContentListHCCC.ToList();
 
-            var emailContentListFURCC = await connection.QueryAsync<ItemCodecontent>("select uid as Uid,division_name as Division from vw_columndata where status = '1' AND  division_name in ('HC-Cash And Carry','HC-Furniture') AND CAST(datecreated AS DATE) = CURRENT_DATE");
+            var emailContentListFURCC = await connection.QueryAsync<ItemCodecontent>("select uid as Uid,division_name as Division from vw_columndata where status = '1' AND  division_name in ('Homecentre Daily','HC-Furniture') AND CAST(datecreated AS DATE) = CURRENT_DATE");
             var emailFURCCList = emailContentListFURCC.ToList();
 
-            var emailContentListHCFURCC = await connection.QueryAsync<ItemCodecontent>("select uid as Uid,division_name as Division from vw_columndata where status = '1' AND  division_name in ('HC-Cash And Carry','HC-Furniture','HC-House Hold') AND CAST(datecreated AS DATE) = CURRENT_DATE");
+            var emailContentListHCFURCC = await connection.QueryAsync<ItemCodecontent>("select uid as Uid,division_name as Division from vw_columndata where status = '1' AND  division_name in ('Homecentre Daily','HC-Furniture','HC-House Hold') AND CAST(datecreated AS DATE) = CURRENT_DATE");
             var emailHCFURCCList = emailContentListHCFURCC.ToList();
 
             var itemcodeCount = await connection.QueryFirstOrDefaultAsync<int>("select count(*) from vw_columndata where status = '1'");
@@ -2679,7 +2679,7 @@ namespace HomeCentre.PIM.BAL.Implementations
 
             foreach (var user in users)
             {
-                if (user.Department.Contains("HC-Furniture") && user.Department.Contains("HC-House Hold") && user.Department.Contains("HC-Cash And Carry"))
+                if (user.Department.Contains("HC-Furniture") && user.Department.Contains("HC-House Hold") && user.Department.Contains("Homecentre Daily"))
                 {
                     hcFURCCDepartmentEmails.Add(user.Email);
                 }
@@ -2687,11 +2687,11 @@ namespace HomeCentre.PIM.BAL.Implementations
                 {
                     hcFURDepartmentEmails.Add(user.Email);
                 }
-                else if (user.Department.Contains("HC-Furniture") && user.Department.Contains("HC-Cash And Carry"))
+                else if (user.Department.Contains("HC-Furniture") && user.Department.Contains("Homecentre Daily"))
                 {
                     ccFURDepartmentEmails.Add(user.Email);
                 }
-                else if (user.Department.Contains("HC-Cash And Carry") && user.Department.Contains("HC-House Hold"))
+                else if (user.Department.Contains("Homecentre Daily") && user.Department.Contains("HC-House Hold"))
                 {
                     hcCCDepartmentEmails.Add(user.Email);
                 }
@@ -2703,7 +2703,7 @@ namespace HomeCentre.PIM.BAL.Implementations
                 {
                     furnitureEmails.Add(user.Email);
                 }
-                else if (user.Department.Contains("HC-Cash And Carry"))
+                else if (user.Department.Contains("Homecentre Daily"))
                 {
                     cashandcarryEmails.Add(user.Email);
                 }
@@ -2822,13 +2822,13 @@ namespace HomeCentre.PIM.BAL.Implementations
             var emailContentListCC = await connection.QueryAsync<Camcontent>("select cd.uid as Uid,cd.division_name as Division,ui.planogram_family_name as PlanoOrFamily,i.code as Itemcode from vw_columndata cd " +
                                                                                 "join itemcodestaging i on cd.uid = i.uidcode " +
                                                                                 "join vw_uid ui on cd.uid = ui.uid " +
-                                                                                "where cd.statusfilter = '1' AND  cd.division_name = 'HC-Cash And Carry' AND CAST(cd.datecreated AS DATE) = CURRENT_DATE");
+                                                                                "where cd.statusfilter = '1' AND  cd.division_name = 'Homecentre Daily' AND CAST(cd.datecreated AS DATE) = CURRENT_DATE");
             var emailcontentCCList = emailContentListCC.ToList();
 
             var emailContentListHCCC = await connection.QueryAsync<Camcontent>("select cd.uid as Uid,cd.division_name as Division,ui.planogram_family_name as PlanoOrFamily,i.code as Itemcode from vw_columndata cd " +
                                                                                 "join itemcodestaging i on cd.uid = i.uidcode " +
                                                                                 "join vw_uid ui on cd.uid = ui.uid " +
-                                                                                "where cd.statusfilter = '1' AND cd.division_name in ('HC-Cash And Carry','HC-House Hold') AND CAST(cd.datecreated AS DATE) = CURRENT_DATE");
+                                                                                "where cd.statusfilter = '1' AND cd.division_name in ('Homecentre Daily','HC-House Hold') AND CAST(cd.datecreated AS DATE) = CURRENT_DATE");
             var emailHCCCList = emailContentListHCCC.ToList();
 
             var emailContentListHCFUR = await connection.QueryAsync<Camcontent>("select cd.uid as Uid,cd.division_name as Division,ui.planogram_family_name as PlanoOrFamily,i.code as Itemcode from vw_columndata cd " +
@@ -2840,13 +2840,13 @@ namespace HomeCentre.PIM.BAL.Implementations
             var emailContentListCCFUR = await connection.QueryAsync<Camcontent>("select cd.uid as Uid,cd.division_name as Division,ui.planogram_family_name as PlanoOrFamily,i.code as Itemcode from vw_columndata cd " +
                                                                                 "join itemcodestaging i on cd.uid = i.uidcode " +
                                                                                 "join vw_uid ui on cd.uid = ui.uid " +
-                                                                                "where cd.statusfilter = '1' AND cd.division_name in ('HC-Cash And Carry','HC-Furniture') AND CAST(cd.datecreated AS DATE) = CURRENT_DATE");
+                                                                                "where cd.statusfilter = '1' AND cd.division_name in ('Homecentre Daily','HC-Furniture') AND CAST(cd.datecreated AS DATE) = CURRENT_DATE");
             var emailFURCCList = emailContentListHCCC.ToList();
 
             var emailContentListHCCCFUR = await connection.QueryAsync<Camcontent>("select cd.uid as Uid,cd.division_name as Division,ui.planogram_family_name as PlanoOrFamily,i.code as Itemcode from vw_columndata cd " +
                                                                                 "join itemcodestaging i on cd.uid = i.uidcode " +
                                                                                 "join vw_uid ui on cd.uid = ui.uid " +
-                                                                                "where cd.statusfilter = '1' AND cd.division_name in ('HC-Cash And Carry','HC-House Hold','HC-Furniture') AND CAST(cd.datecreated AS DATE) = CURRENT_DATE");
+                                                                                "where cd.statusfilter = '1' AND cd.division_name in ('Homecentre Daily','HC-House Hold','HC-Furniture') AND CAST(cd.datecreated AS DATE) = CURRENT_DATE");
             var emailHCCCFURList = emailContentListHCCC.ToList();
 
             var camCount = await connection.QueryFirstOrDefaultAsync<int>("select count(*) from vw_columndata cd join itemcodestaging i on cd.uid = i.uidcode join vw_uid ui on cd.uid = ui.uid " +
@@ -2867,7 +2867,7 @@ namespace HomeCentre.PIM.BAL.Implementations
 
             foreach (var user in users)
             {
-                if (user.Department.Contains("HC-Furniture") && user.Department.Contains("HC-House Hold") && user.Department.Contains("HC-Cash And Carry"))
+                if (user.Department.Contains("HC-Furniture") && user.Department.Contains("HC-House Hold") && user.Department.Contains("Homecentre Daily"))
                 {
                     hcFURCCDepartmentEmails.Add(user.Email);
                 }
@@ -2875,11 +2875,11 @@ namespace HomeCentre.PIM.BAL.Implementations
                 {
                     hcFURDepartmentEmails.Add(user.Email);
                 }
-                else if (user.Department.Contains("HC-Furniture") && user.Department.Contains("HC-Cash And Carry"))
+                else if (user.Department.Contains("HC-Furniture") && user.Department.Contains("Homecentre Daily"))
                 {
                     ccFURDepartmentEmails.Add(user.Email);
                 }
-                else if (user.Department.Contains("HC-Cash And Carry") && user.Department.Contains("HC-House Hold"))
+                else if (user.Department.Contains("Homecentre Daily") && user.Department.Contains("HC-House Hold"))
                 {
                     hcCCDepartmentEmails.Add(user.Email);
                 }
@@ -2891,7 +2891,7 @@ namespace HomeCentre.PIM.BAL.Implementations
                 {
                     furnitureEmails.Add(user.Email);
                 }
-                else if (user.Department.Contains("HC-Cash And Carry"))
+                else if (user.Department.Contains("Homecentre Daily"))
                 {
                     cashandcarryEmails.Add(user.Email);
                 }

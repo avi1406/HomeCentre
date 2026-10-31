@@ -669,7 +669,7 @@ const toDate = this.state.toDate instanceof Date
             case 4:
               return 'HC-Furniture';
             case 65:
-              return 'HC-Cash And Carry';
+              return 'Homecentre Daily';
             case 0:
               return 'Total';
             case null:
